@@ -11,3 +11,6 @@ let intervalo = setInterval(() => {
     cuenta++;
     if (cuenta === 3) clearInterval(intervalo); // Stops after 3 dots.
 }, 1000);
+
+// Declaring a constant with the information of the URL provided in the excercise.
+const url = "https://jsonplaceholder.typicode.com/posts";
