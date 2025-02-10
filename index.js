@@ -21,7 +21,7 @@ function mostrarJson() {
     fetch(url)
         .then(respuesta => respuesta.json())
         .then(json => console.log("Datos obtenidos de la API: ", json))
-        .catch(error => console.error(error));
+        .catch(error => console.error("Se presentaron errores en la petición: ", error));
 }
 
 // Calling function applying timeout feature in to display the result with some delasy after the first message.
