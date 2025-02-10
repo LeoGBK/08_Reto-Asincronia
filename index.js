@@ -10,7 +10,18 @@ let intervalo = setInterval(() => {
     process.stdout.write("."); // Prints dots continuously.
     cuenta++;
     if (cuenta === 3) clearInterval(intervalo); // Stops after 3 dots.
-}, 1000);
+}, 750);
 
 // Declaring a constant with the information of the URL provided in the excercise.
 const url = "https://jsonplaceholder.typicode.com/posts";
+
+// Creating function fot sing fetch to retrieve information as JSON format and using setTimeout().
+// This is to later call it using setTimeout and have the code more readable.
+function mostrarJson() {
+    fetch(url)
+        .then(respuesta => respuesta.json())
+        .then(json => console.log(json));
+}
+
+// Calling function applying timeout feature in to display the result with some delasy after the first message.
+setTimeout(() => mostrarJson(), 3000);
