@@ -10,4 +10,4 @@ let intervalo = setInterval(() => {
     process.stdout.write("."); // Prints dots continuously.
     cuenta++;
     if (cuenta === 3) clearInterval(intervalo); // Stops after 3 dots.
-}, 500);
+}, 1000);
