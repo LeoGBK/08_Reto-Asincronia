@@ -20,7 +20,8 @@ const url = "https://jsonplaceholder.typicode.com/posts";
 function mostrarJson() {
     fetch(url)
         .then(respuesta => respuesta.json())
-        .then(json => console.log("Datos obtenidos de la API: ", json));
+        .then(json => console.log("Datos obtenidos de la API: ", json))
+        .catch(error => console.error(error));
 }
 
 // Calling function applying timeout feature in to display the result with some delasy after the first message.
