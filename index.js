@@ -15,7 +15,7 @@ let intervalo = setInterval(() => {
 // Declaring a constant with the information of the URL provided in the excercise.
 const url = "https://jsonplaceholder.typicode.com/posts";
 
-// Creating function fot sing fetch to retrieve information as JSON format and using setTimeout().
+// Creating function using fetch to retrieve information as JSON format and using setTimeout().
 // This is to later call it using setTimeout and have the code more readable.
 function mostrarJson() {
     fetch(url)
